@@ -74,7 +74,7 @@ const Carousel = ({ slides }) => {
   const paginate = (newDirection) => {
     const newIndex = currentIndex + newDirection;
     
-    // Ensure the index is within bounds
+   
     if (newIndex >= 0 && newIndex < slides.length) {
       setPage([newIndex, newDirection]);
     }
