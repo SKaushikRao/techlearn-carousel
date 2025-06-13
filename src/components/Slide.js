@@ -83,19 +83,19 @@ const CodeBlock = styled(motion.pre)`
 `;
 
 const Slide = ({ data, isActive }) => {
-  // Enhanced gradient function with more contrast between primary and secondary colors
+ 
   const getSecondaryColor = (primaryColor) => {
-    // More dramatic color combinations for enhanced gradient effect
+   
     const themeColors = {
-      // Original colors with more contrast
-      '#FF6B6B': '#8A4FFF', // Red to purple for more contrast
-      '#4ECDC4': '#004E92', // Teal to deep blue
-      '#FFD166': '#FF5E62', // Yellow to red/orange
+     
+      '#FF6B6B': '#8A4FFF', 
+      '#4ECDC4': '#004E92',
+      '#FFD166': '#FF5E62', 
       
-      // Enhanced colors for slides 3, 4, 5
-      '#6A0572': '#EC38BC', // Deep purple to magenta
-      '#5D2A42': '#F3A183', // Burgundy to peach
-      '#247BA0': '#70F570'  // Blue to bright green
+ 
+      '#6A0572': '#EC38BC', 
+      '#5D2A42': '#F3A183', 
+      '#247BA0': '#70F570'  
     };
     
     return themeColors[primaryColor] || '#222222';
